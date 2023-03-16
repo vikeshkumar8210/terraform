@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@vikeshkumar8210 
-TeknoPathshala
-/
-aws-repo
-Public
-Fork your own copy of TeknoPathshala/aws-repo
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-aws-repo/main.tf
-@mydevopscoach
-mydevopscoach Update main.tf
-Latest commit 6549cc8 on Jul 2, 2021
- History
- 1 contributor
-55 lines (48 sloc)  1.04 KB
-
 provider "aws" {
   region = var.aws_region
 }
@@ -82,18 +53,3 @@ tags= {
     Name = "my_elastic_ip"
   }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-aws-repo/main.tf at main · TeknoPathshala/aws-repo
