@@ -5,35 +5,28 @@ provider "aws" {
 #Create security group with firewall rules
 resource "aws_security_group" "my_security_group" {
   name        = var.security_group
-  description = "launch-wizard-3 created 2023-03-16T09:39:24.780Z"
+  description = "launch-wizard-1 created 2023-03-21T11:38:33.096Z"
 
   ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = 8080
+    to_port     = 8080
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-  
-   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+  
  # outbound from jenkis server
   egress {
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 0
+    to_port     = 65535
     protocol    = "tcp"
-    cidr_blocks = ["157.34.89.173/32"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags= {
