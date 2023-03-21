@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     =  "terraform-ec2"
+  default     =  "terraform-key"
 }
 
 variable "instance_type" {
@@ -14,8 +14,8 @@ variable "instance_type" {
 }
 
 variable "security_group" {
-  description = "launch-wizard-3 created 2023-03-16T09:39:24.780Z"
-  default     = "launch-wizard-3"
+  description = "launch-wizard-1 created 2023-03-21T11:38:33.096Z"
+  default     = "launch-wizard-1"
 }
 
 variable "tag_name" {
